@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171315">
+  <title>The Things You Don't Know I Remember</title>
+  <meta name="description" content="A little archive of us.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+
+  <div id="app">
+    <header class="topbar">
+      <div class="brand">A little archive of us.</div>
+      <div class="progress">
+        <span id="progressText">1 / 7</span>
+        <span class="dot"></span>
+        <span id="sectionName">Begin</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="screen active" data-screen="0">
+        <div class="eyebrow">SEPTEMBER 30, 2026</div>
+        <h1>The things<br><em>you don't know</em><br>I remember.</h1>
+        <p class="lead">This isn't a story of everything that happened.<br>It's a story of the things I noticed.</p>
+        <button class="primary" data-next>Enter <span>→</span></button>
+        <p class="tiny">Take your time. There are a few things hidden in here.</p>
+      </section>
+
+      <section class="screen" data-screen="1">
+        <div class="eyebrow">01 · BEGINNING</div>
+        <h2>At some point, “us” stopped being an idea.</h2>
+        <p class="copy">There wasn't one giant cinematic moment. There were small decisions, conversations, visits, questions, and eventually a day that became yours.</p>
+
+        <div class="timeline">
+          <button class="timecard" data-reveal="May 7"><span>01</span><strong>May 7</strong><small>The beginning of a conversation.</small></button>
+          <button class="timecard" data-reveal="June"><span>02</span><strong>June</strong><small>Talking became intention.</small></button>
+          <button class="timecard" data-reveal="June 30"><span>03</span><strong>June 30</strong><small>A birthday became a beginning.</small></button>
+        </div>
+
+        <div class="reveal" id="timelineReveal"></div>
+        <button class="textbtn" data-next>Continue →</button>
+      </section>
+
+      <section class="screen" data-screen="2">
+        <div class="eyebrow">02 · OUR LANGUAGE</div>
+        <h2>Three names. One very strange evolution.</h2>
+        <p class="copy">Somewhere along the way, ordinary words stopped being ordinary.</p>
+
+        <div class="name-grid" id="nameGrid">
+          <button class="namecard" data-name="Big Head">BIG HEAD</button>
+          <button class="namecard" data-name="Finished Man">FINISHED MAN</button>
+          <button class="namecard" data-name="Crab Baby">CRAB BABY</button>
+        </div>
+
+        <p class="hint">Tap the names in the order they became part of our language.</p>
+        <div id="sequence" class="sequence"></div>
+        <div id="nameResult" class="result"></div>
+        <button class="textbtn" id="nameContinue" data-next disabled>Continue →</button>
+      </section>
+
+      <section class="screen" data-screen="3">
+        <div class="eyebrow">03 · THINGS I NOTICE</div>
+        <h2>You once told me something important.</h2>
+
+        <div class="quote-card">
+          <span class="quote-mark">“</span>
+          <p>Sometimes the thing isn't even what I need. I just want to know that you thought about me.</p>
+        </div>
+
+        <p class="copy">I heard that.</p>
+        <p class="copy">So this whole little archive is my answer.</p>
+
+        <div class="notice-list">
+          <div>How you can be stubborn and soft in the same hour.</div>
+          <div>How food somehow becomes a form of communication.</div>
+          <div>How your “I don't need anything” doesn't always mean “don't think about me.”</div>
+          <div>How your big mouth is somehow part of the person I would miss.</div>
+          <div>How you notice when something is wrong before I say it out loud.</div>
+          <div>How love shows up in the smallest checks and questions.</div>
+        </div>
+
+        <button class="textbtn" data-next>There is more →</button>
+      </section>
+
+      <section class="screen" data-screen="4">
+        <div class="eyebrow">04 · THE ORDINARY THINGS</div>
+        <h2>Nobody thinks to save these moments.</h2>
+
+        <div class="ordinary" id="ordinary">
+          <button data-message="Have you eaten?">Have you eaten?</button>
+          <button data-message="What are you eating tonight?">What are you eating tonight?</button>
+          <button data-message="Rest, babe.">Rest, babe.</button>
+          <button data-message="Call me.">Call me.</button>
+          <button data-message="Are you home?">Are you home?</button>
+          <button data-message="What are you doing?">What are you doing?</button>
+        </div>
+
+        <div class="ordinaryReveal" id="ordinaryReveal">
+          <p>They look small.</p>
+          <p>But this is where relationships actually live.</p>
+          <p>The stupid jokes. The food. The checking in. The random conversations that somehow become an hour.</p>
+          <p><em>The ordinary things became ours.</em></p>
+        </div>
+
+        <button class="textbtn" data-next>One last room →</button>
+      </section>
+
+      <section class="screen" data-screen="5">
+        <div class="eyebrow">05 · WHAT I ACTUALLY REMEMBER</div>
+        <h2>You probably thought I was testing your memory.</h2>
+        <p class="lead">I wasn't.</p>
+
+        <div class="finalCopy">
+          <p>I already knew there would be things you wouldn't remember.</p>
+          <p>I remember because they're attached to you.</p>
+          <p>I remember the names. The ordinary conversations. The difficult ones. The visits. The laughter. The moments you needed reassurance. The moments you made a boring day feel different.</p>
+          <p>I don't need you to remember everything.</p>
+          <p><strong>That's my job.</strong></p>
+          <p>I just want you to know that while we've been busy living this thing...</p>
+          <p class="bigline">I've been paying attention.</p>
+          <p>Listening. Learning you. Remembering you.</p>
+          <p>And loving you — even in the ordinary parts.</p>
+        </div>
+
+        <button class="primary finalButton" id="openFinal">Open the last thing <span>→</span></button>
+      </section>
+
+      <section class="screen finalScreen" data-screen="6">
+        <div class="eyebrow">FOR ESTHER</div>
+        <h2>My Joy.</h2>
+
+        <div class="letter">
+          <p>I could have bought you something.</p>
+          <p>I could have written you a long letter.</p>
+          <p>I could have made another game.</p>
+          <p>But I wanted to give you something that only I could give you:</p>
+          <p><strong>a little evidence that I've been here.</strong></p>
+          <p>Watching. Listening. Learning you. Remembering you.</p>
+          <p>Three months isn't a lifetime. But somehow, you've already become part of the way I experience mine.</p>
+          <p>And if I had to choose you again...</p>
+          <p class="bigline">I would.</p>
+          <p>Happy anniversary, my baby.</p>
+          <p class="signature">— Your Crab Baby ❤️</p>
+        </div>
+
+        <button class="secret" id="secretBtn">There is still one thing you haven't found.</button>
+
+        <div class="secretReveal" id="secretReveal">
+          <p class="eyebrow">THE HIDDEN ROOM</p>
+          <h3>One thing I hope you never forget.</h3>
+          <p>Whatever changes around us, I hope we keep choosing the ordinary things: talking, laughing, checking in, learning each other, repairing what needs repairing, and making a life out of little moments.</p>
+          <p class="bigline">I love you, Esther.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
